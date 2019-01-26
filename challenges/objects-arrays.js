@@ -6,35 +6,25 @@
   object name, diet, weight, length, period
 */
 
+function DinoInfo (name, diet, weight, length, period){
+  this.name = name;
+  this.diet = diet;
+  this.weight = weight;
+  this.length = length;
+  this.period =period;
+}
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceious
 
-const tyrannosaurus = {
-  "name": "Tyrannosaurus Rex",
-  "diet": "Carnivorous",
-  "weight": "7000kg",
-  "length": "12m",
-  "period": "Late Cretaceous"
-}
+let tyrannosaurus = new DinoInfo ("Tyrannosaurus", "carnivorous", "7000kg", "12m", "Late Cretaceious");
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
-const stegosaurus = {
-  "name": "Stegosaurus",
-  "diet": "herbivorous",
-  "weight": "2000kg",
-  "length": "9m",
-  "period": "Late Jurassic"
-}
+let stegosaurus = new DinoInfo ("stegosaurus", "herbivorous", "2000kg", "9m", "Late Jurassic");
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceious
 
-const velociraptor = {
-  "name": "Velociraptor",
-  "diet": "Carnivorous",
-  "weight": "15kg",
-  "length": "1.8m",
-  "period": "Late Cretaceous"
-}
+let velociraptor = new DinoInfo ("velociraptor", "carnivorous", "15kg", "1.8m", "Late Cretaceious");
 
 
 // Using your dinosaur objects, log answers to these questions:
@@ -57,7 +47,7 @@ tyrannosaurus.roar = function() {
   return `RAAAAAWWWRRRRR!`
 }
 
-console.log(tyrannosaurus.roar);
+console.log(tyrannosaurus.roar());
 
 
 // ==== Arrays ====
@@ -75,7 +65,9 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 {"id":9,"first_name":"Michail","university":"Universidad Católica de Ávila","email":"mrome8@shinystat.com"},
 {"id":10,"first_name":"Hube","university":"Universitat Rovira I Virgili Tarragona","email":"hlethbrig9@foxnews.com"}]
 
-/* Request 1: Create a new array called universities that contains all the univeristies in the graduates array.  
+/* Request 1: Create a new array called universities that contains all the univeristies in the graduates array. 
+
+
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
