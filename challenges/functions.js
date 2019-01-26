@@ -47,7 +47,9 @@ console.log(consume("Adam", "Scott", speak));
 
 // Explanation: 
 
-
+//Closures are a feature of javascript that allows functions to access variables outside of its local scope. 
+//The variable `internal` is within the function scope. The nestedFunction() can access the variable via scope chain. 
+//The lexical environement that the function was declared it allows it to reach them. 
 
 
 const external = "I'm outside the function";
